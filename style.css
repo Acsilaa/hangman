@@ -56,7 +56,7 @@ body{
 /* hangman */
 #hangman{
     position: relative;
-    width: 60%;
+    width: 11em;
     height: 90%;
 }
 .hang{
