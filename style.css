@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    border: 1px solid #000;
+    
+}
+#leftw, #rightw{
+    width: 50%;
+    float: left;
+}
+
+#leftw, #rightw, #statusw{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+#statusw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#statusw span{
+    margin: .1em;
+}
+.letterbtn{
+    width: calc( 100% / 5 );
+    height: 2.75em;
+}
+#leftw{
+    height: calc(5*2.78em);
+}
