@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hangman</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js.js" defer></script>
+    <script src="possiblewords.js"></script>
+    <script src="logic.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <div id="leftw">bal</div>
+        <div id="leftw">
+            <div id="hangman">
+                <div id="base" class="hang"></div>
+                <div id="col1" class="hang"></div>
+                <div id="col2" class="hang"></div>
+                <div id="col3" class="hang"></div>
+                <div id="rope" class="hang"></div>
+                <div id="head" class="hang"></div>
+                <div id="body" class="hang"></div>
+                <div id="leg1" class="hang"></div>
+                <div id="leg2" class="hang"></div>
+                <div id="arms" class="hang"></div>
+            </div>
+            
+        </div>
         <div id="rightw"></div>
         <div id="statusw"></div>
     </div>
