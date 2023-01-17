@@ -16,19 +16,21 @@ for(let i = 0; i < actualWordArr.length; i++){
 let dictionary = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 function TryLetter(letter){
     let didGuessRight = false;
+    let bannedIndexes = [];
     for(let i = 0; i < actualWordArr.length; i++){
         if(actualWordArr[i] != letter.toLowerCase()) continue;
         didGuessRight = true;
         let classN = "s" + letter.toLowerCase();
         let fields = document.getElementsByClassName(classN);
-        for(let i = 0; i < fields.length; i++){
-            fields[i].innerHTML = letter;
-            guessedLetters++;
+        for(let j = 0; j < fields.length; j++){
+            fields[j].innerHTML = letter;
+            if(bannedIndexes[j] != j) guessedLetters++;
+            bannedIndexes += [j];
         }
         if(guessedLetters == actualWordArr.length) return Victory();
     }
+    bannedIndexes = [];
     if(didGuessRight) return;
-    // TODO draw hangman part
     lives--;
     let partsToDraw = dotHang.length - lives;
     for(let i = 0; i < partsToDraw; i++){

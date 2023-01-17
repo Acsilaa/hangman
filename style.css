@@ -11,7 +11,7 @@ body{
     color: gray;
 }
 .container{
-    width: 80%;
+    width: min(60%, 80vw);
     border: 1px solid #000;
     
 }
