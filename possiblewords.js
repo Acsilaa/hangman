@@ -53,4 +53,17 @@ let possibleWords = [
     "three",
     "four",
     "jog",
+    "hátfájás",
+    "fejfájás",
+    "hűtőgép",
+    "karácsonyfa",
+    "halandzsa",
+    "esznméletlen",
+    "apátlan",
+    "köcsög",
+    "nigger",
+    "attila",
+    "trlegvehem",
+    "bumburnyák",
+
 ];

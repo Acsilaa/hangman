@@ -37,7 +37,7 @@ body{
 }
 .letterbtn{
     width: calc( 100% / 5 );
-    height: calc(100% / 6 + .1px); /*????*/
+    height: calc(100% / 7 + .1px); /*????*/
     border: 1px solid gray;
     background-color: #000;
     color: rgb(194, 194, 194);

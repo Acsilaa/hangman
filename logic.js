@@ -13,7 +13,7 @@ for(let i = 0; i < actualWordArr.length; i++){
     let sLetter = `<span class="s${actualWordArr[i]}">_</span>`;
     statusDiv.innerHTML += sLetter;
 }
-let dictionary = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+let dictionary = "aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz".toUpperCase().split("");
 function TryLetter(letter){
     let didGuessRight = false;
     let bannedIndexes = [];
